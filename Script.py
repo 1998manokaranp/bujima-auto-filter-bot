@@ -14,7 +14,7 @@ class script(object):
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ✯ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href='https://www.koyeb.com/'>ᴡᴇʙ</a>
-✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9│ᴀᴅᴠᴀɴᴄᴇ-ᴄᴏᴅᴇ│</b></b>"""
+✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9 </b></b>"""
     
     REFER_SMD_TXT = """<b><blockquote>ʀᴇғᴇʀ ғʀɪᴇɴᴅs ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs! 💰
 
@@ -576,7 +576,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
 
 /stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b> </b></blockquote>"""
 
-    SOURCE_TXT = """ <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :</b> 👇\nᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ɪᴛ ғʀᴇᴇʟʏ. </b>"""
+    SOURCE_TXT = """ <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :</b> 👇\n<b>ᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ɪᴛ ғʀᴇᴇʟʏ. </b>"""
     
     DISCLAIMER_TXT = """<b><blockquote>ᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
