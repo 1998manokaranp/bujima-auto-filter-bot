@@ -8,13 +8,13 @@ class script(object):
     HELP_TXT = """<b><blockquote><b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b></b></blockquote>"""
 
-    ABOUT_TXT = """<b><blockquote>✯ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
+    ABOUT_TXT = """<b>✯ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
 ✯ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/{}>Oᴡɴᴇʀ</a>
 ✯ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ✯ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href='https://www.koyeb.com/'>ᴡᴇʙ</a>
-✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9│ᴀᴅᴠᴀɴᴄᴇ-ᴄᴏᴅᴇ│</b></b></blockquote>"""
+✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9│ᴀᴅᴠᴀɴᴄᴇ-ᴄᴏᴅᴇ│</b></b>"""
     
     REFER_SMD_TXT = """<b><blockquote>ʀᴇғᴇʀ ғʀɪᴇɴᴅs ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs! 💰
 
