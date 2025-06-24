@@ -26,8 +26,8 @@ async def start(client, message):
         buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -45,34 +45,34 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('🛑ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss🧿', callback_data='subscription'),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
         else:
             buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💸ᴇᴀʀɴ ᴍᴏɴᴇʏ💷', callback_data="shortlink_info"),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ ғɪʟᴛᴇʀ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
+        m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
         await asyncio.sleep(0.4)
         await m.edit_text("🕊️")
         await asyncio.sleep(0.5)
@@ -142,31 +142,31 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('🛑ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss🧿', callback_data='subscription'),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
         else:
             buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💸ᴇᴀʀɴ ᴍᴏɴᴇʏ💷', callback_data="shortlink_info"),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -199,34 +199,34 @@ async def start(client, message):
                 buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('🛑ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss🧿', callback_data='subscription'),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
             else:
                 buttons = [[
                 InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('⭐ᴍᴏᴠɪᴇ ᴢᴏɴᴇs🍥', url=CHNL_LNK),
-                InlineKeyboardButton('🎉ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎀', url=GRP_LNK)
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💸ᴇᴀʀɴ ᴍᴏɴᴇʏ💷', callback_data="shortlink_info"),
-                InlineKeyboardButton('🔍ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
-                InlineKeyboardButton('🎭ʜᴇʟᴘ⚙️', callback_data='help'),
-                InlineKeyboardButton('📲ᴀʙᴏᴜᴛ📍', callback_data='about')
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('👋ᴄʟᴏsᴇ🎋', callback_data='close_data')
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ ғɪʟᴛᴇʀ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
+            m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
             await asyncio.sleep(0.4)
             await m.edit_text("🕊️")
             await asyncio.sleep(0.5)
@@ -289,7 +289,7 @@ async def start(client, message):
                         InlineKeyboardButton("🚀 ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🚀", url=download),
                         InlineKeyboardButton('🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥', url=stream)
                     ],[
-                        InlineKeyboardButton("🎭 ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
+                        InlineKeyboardButton(" ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
@@ -361,7 +361,7 @@ async def start(client, message):
                         InlineKeyboardButton("🚀 ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🚀", url=download),
                         InlineKeyboardButton('🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥', url=stream)
                     ],[
-                        InlineKeyboardButton("🎭 ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
+                        InlineKeyboardButton(" ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
