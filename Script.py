@@ -6,10 +6,10 @@ class script(object):
 <b><blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Mobarak46">Mᴜʙɪ</a></b></b></blockquote>"""
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
-ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b></b></blockquote>"""
+ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b></b>"""
 
     ABOUT_TXT = """<b>✯ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-✯ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/{}>Oᴡɴᴇʀ</a>
+✯ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/{}>Mᴜʙɪ</a>
 ✯ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -576,7 +576,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
 
 /stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b> </b></blockquote>"""
 
-    SOURCE_TXT = """<b><blockquote> <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :</b> 👇\nᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ɪᴛ ғʀᴇᴇʟʏ. </b></blockquote>"""
+    SOURCE_TXT = """ <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :</b> 👇\nᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ɪᴛ ғʀᴇᴇʟʏ. </b>"""
     
     DISCLAIMER_TXT = """<b><blockquote>ᴛʜɪꜱ ɪꜱ ᴀ ғᴜʟʟʏ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
