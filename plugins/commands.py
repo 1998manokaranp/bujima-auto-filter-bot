@@ -48,7 +48,7 @@ async def start(client, message):
                 InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
                 InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
                 InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -145,7 +145,7 @@ async def start(client, message):
                 InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
                 InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
                 InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -202,7 +202,7 @@ async def start(client, message):
                 InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
                 InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💵 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss', callback_data='subscription'),
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
                 InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
