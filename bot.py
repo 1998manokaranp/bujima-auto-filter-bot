@@ -84,7 +84,7 @@ async def start():
         for admin in ADMINS:
             await SMDBOTzBot.send_message(
                 chat_id=admin,
-                text=f"<b>๏[-ิ_•ิ]๏ {me.mention} Restarted ✅</b>",
+                text=f"<b> {me.mention} │» 𝗥𝗘𝗦𝗧𝗔𝗥𝗧𝗘𝗗 «│</b>",
                 parse_mode=enums.ParseMode.HTML
             )
     except Exception as e:
