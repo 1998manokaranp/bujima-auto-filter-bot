@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b><blockquote><b>​​​ʜɪɪ {}, 
-ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟꜰɪʟᴛᴇʀ + ꜰɪʟᴇsᴛᴏʀᴇ ʙᴏᴛ.
+ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟꜰɪʟᴛᴇʀ ʙᴏᴛ.
 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !
 
 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Mobarak46">Mᴜʙɪ</a></b></b></blockquote>"""
@@ -14,9 +14,7 @@ class script(object):
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ✯ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href='https://www.koyeb.com/'>ᴡᴇʙ</a>
-✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9[ᴀᴅᴠᴀɴᴄᴇ-ᴄᴏᴅᴇ]</b>
-
-<b>➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴍᴇ.</b></b></blockquote>"""
+✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9│ᴀᴅᴠᴀɴᴄᴇ-ᴄᴏᴅᴇ│</b></b></blockquote>"""
     
     REFER_SMD_TXT = """<b><blockquote>ʀᴇғᴇʀ ғʀɪᴇɴᴅs ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs! 💰
 
