@@ -5,7 +5,7 @@ class script(object):
 
 <b><blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Mobarak46">Mᴜʙɪ</a></b></b></blockquote>"""
     
-    HELP_TXT = """<b><blockquote><b>ʜᴇʟʟᴏ {}
+    HELP_TXT = """<b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b></b></blockquote>"""
 
     ABOUT_TXT = """<b>✯ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
@@ -326,7 +326,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 ⏰ 𝐓ɪᴍᴇ : <code>{}</code>
 🌐 𝐓ɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ 𝐁ᴜɪʟᴅ 𝐒ᴛᴀᴛᴜs: <code>ᴠ7.𝟶 [ Sᴛᴀʙʟᴇ </code>
-💌 𝐁ᴏᴛ 𝐍ᴀᴍᴇ:-@Mubi_Autofilter_bot</b></blockquote>"""
+💌 𝐁ᴏᴛ 𝐍ᴀᴍᴇ:-<a href=https://t.me/{}>{}</a> </b></blockquote>"""
 
     LOGO = """
 ░██████╗███╗░░░███╗██████╗░██████╗░░█████╗░████████╗███████╗
