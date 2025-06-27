@@ -1885,7 +1885,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ🔎', switch_inline_query_current_chat='')
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡. ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
