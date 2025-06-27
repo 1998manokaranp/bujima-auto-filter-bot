@@ -8,16 +8,16 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '21678898'))
 API_HASH = environ.get('API_HASH', '2c635390c62a6164fb51aa0669ae1083')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7838452739:AAE8I-qWRff-NEzw_PyDxHsPdMPay8X7e0g")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7566096725:AAEjVZe6aBjEPzG1nXNuFCOONApCXXTSHCE")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://graph.org/file/0885c8a160def3886953d-44ef468836477c1830.jpg https://graph.org/file/d03736ad729c4302f15cb-d267eff00f6dc35299.jpg https://graph.org/file/d71e78234b52f2bace826-be531b0002a5f576bf.jpg https://graph.org/file/2645f6a39d109041f6ec2-8291874e1aedb822c2.jpg https://graph.org/file/470f3b897e95745e53905-70c9208d181abcbb6e.jpg https://graph.org/file/8bbd523382dbde4f1c8ed-5ee2f56300d97ebf1c.jpg https://graph.org/file/dbb9e999862e3dd067a7c-67e39b5d31ee0067b2.jpg https://graph.org/file/1b15716a68e5c9a059eea-835155619597da324e.jpg https://graph.org/file/8b4a5b495f7b2064d055b-a129f8a500cabcda84.jpg https://graph.org/file/5a5e4bba53969c137e39d-f747ea72c338ac2410.jpg https://graph.org/file/2fb7b13723ce91d64c840-7a70ad8b5c23d0e47c.jpg https://graph.org/file/449ea1d3dd3c90db8a7f4-1f4e88e3793717dd70.jpg https://graph.org/file/fddf90e05adc87cad68c3-3dcf8126f0e53941d7.jpg https://graph.org/file/772b36c7a8a7a8bcd741e-a6d1b62b97dec940c8.jpg https://graph.org/file/edcab2f46d2611642d56f-4f2172e7332f20b476.jpg https://graph.org/file/f4c4a81e8aaf26b00d73e-7f9161ad1ee8f26de8.jpg https://graph.org/file/67add3db4268bbc062dae-6928979f2977a7b582.jpg https://graph.org/file/a0a86c07600eaf6d40daa-581aa73a2fdea700ad.jpg')).split()
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 5934373010').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 5934373010').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1001654008278')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002819996381')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002584731768').split()]  # For Multiple Id Use One Space Between Each.
 auth_channel = environ.get('AUTH_CHANNEL', '-1002318388779') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None # This Is Force Subscribe Channel, also known as Auth Channel 
@@ -33,8 +33,8 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://optimusprime030746:zAcpHvjptTyXA1K8@cluster0.i3fx1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "Mubi4693")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "nazriya469")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #Modes Calls and True & False
