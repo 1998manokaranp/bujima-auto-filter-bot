@@ -13,7 +13,7 @@ class script(object):
 ✯ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
-✯ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href='https://www.koyeb.com/'>ᴡᴇʙ</a>
+✯ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href='https://www.render.com/'>ʀᴇɴᴅᴇʀ</a>
 ✯ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v4.54.9 </b></b>"""
     
     REFER_SMD_TXT = """<b><blockquote>ʀᴇғᴇʀ ғʀɪᴇɴᴅs ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀʀᴅs! 💰
