@@ -14,7 +14,7 @@
 
 Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://t.me/Mobarak46)</b>
 
-ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[sᴍᴅ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ](https://telegram.me/Samandes_bot)</b>
+ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[ғɪʟᴛᴇʀ ʙᴏᴛ](https://telegram.me/Samandes_bot)</b>
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
@@ -57,7 +57,7 @@ Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://
 ## Deployment Support Sites
 
 - [x] Koyeb & Heroku & VPS & Railway & Render
-- [x] If anything Wants Talk About Deploy - Contact [ᴏᴡɴᴇʀ](https://t.me/SMDxTG)
+- [x] If anything Wants Talk About Deploy - Contact [ᴏᴡɴᴇʀ](https://t.me/Mobarak46)
 <details>
 <summary><h3><b>ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs :</b></h3></summary>
 <h3 align="center">
@@ -146,10 +146,12 @@ restart - ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ...
 
 ### Don't Remove Credits
 
-- ᴄʀᴇᴅɪᴛ <b>[sᴍᴅ ʙᴏᴛs](https://t.me/SMD_BOTz)  ➻  [ᴏᴡɴᴇʀ](https://t.me/SMD_Owner) </b>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+- ᴄʀᴇᴅɪᴛ <b>[Bʏɴғ ♔︎ Mᴜʙɪ | 🇾🇪 |](https://t.me/Mobarak46)  ➻  [ᴏᴡɴᴇʀ](https://t.me/Mobarak46) </b>
 - ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ ʀᴇᴍᴏᴠᴇ ᴄʀᴇᴅɪᴛ..
 - ᴛʜᴀɴᴋ ʏᴏᴜ sᴍᴅ ʙᴏᴛs ғᴏʀ ʜᴇʟᴘɪɴɢ ᴜs ɪɴ ᴛʜɪs ᴊᴏᴜʀɴᴇʏ 
 - ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ɢɪᴠɪɴɢ ᴍᴇ ᴄʀᴇᴅɪᴛ @SMD_BOTz  
-- ғᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ -> ᴛᴇʟᴇɢʀᴀᴍ @SMD_BOTz Community @SMD_BOTz </b>
+- ғᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ -> ᴛᴇʟᴇɢʀᴀᴍ @Mobarak46 Community @TamilWeb_LinkZz </b>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
