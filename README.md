@@ -2,13 +2,13 @@
 
 
 <p align="center">
-  <img src="https://graph.org/file/dd619f3bd2db3d0956932.jpg" alt="SMD Logo">
+  <img src="https://graph.org/file/e8997ed5abc7169320154-8429e9c247d40e3412.jpg" alt="Mubi Logo">
 </p>
 <h2 align="center">
-  「 sᴍᴅ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ 」
+  「 ғɪʟᴛᴇʀ ʙᴏᴛ 」
 </h2>
 
-Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://t.me/SMD_BOTz)</b>
+Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://t.me/Mobarak46)</b>
 
 ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[sᴍᴅ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ](https://telegram.me/Samandes_bot)</b>
 
@@ -97,10 +97,10 @@ python3 bot.py
 </details>
 
 ### ᴄᴏɴᴛᴀᴄᴛ :
-<a href="https://t.me/SMD_Owner"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
+<a href="https://t.me/Mobarak46"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
 <a href="https://twitter.com/"><img title="Twitter" src="https://img.shields.io/badge/Twitter-12100E?style=for-the-badge&logo=twitter&logoColor=white"></a>
 <a href="https://facebook.com/"><img title="Facebook" src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white"></a>
-<a href="https://instagram.com/sam_itzs_me"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
+<a href="https://instagram.com/GnmsEditz"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
 
 ## Cᴏᴍᴍᴀɴᴅs
 ```
