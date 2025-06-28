@@ -3,6 +3,10 @@
 
 <p align="center">
   <img src="https://graph.org/file/e8997ed5abc7169320154-8429e9c247d40e3412.jpg" alt="Mubi Logo">
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+  
 </p>
 <h2 align="center">
   「 ғɪʟᴛᴇʀ ʙᴏᴛ 」
