@@ -27,7 +27,7 @@ sʜᴀʀᴇ ʏᴏᴜʀ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀ
     SUBSCRIPTION_TXT = """
 <b><blockquote><b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
 
-ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=SMD-{}
+ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=Mubi-{}
 
 ɪғ {} ᴜɴɪǫᴜᴇ ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴅᴅᴇᴅ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.
 
@@ -52,7 +52,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/SMD_BOTz/7)</code>
+<code>[Button Text](buttonurl:https://t.me/TamilWeb_LinkZz)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code></b></blockquote>"""
 
@@ -115,7 +115,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code></b></blockquote>"""
 
-    SMD_STATUS_TXT = """<b><blockquote><u>🌀 Mᴏɴɢᴏ Dᴀʀᴀʙᴀsᴇ 🍂</u>
+    SMD_STATUS_TXT = """<b><blockquote><u>🌀 Mᴏɴɢᴏ Dᴀʀᴀʙᴀsᴇ </u>
 🧿Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
 👤Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
 🍁Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
@@ -203,7 +203,7 @@ Nᴀᴍᴇ - {}</b></blockquote>"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> </b></blockquote>"""
 
-    CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/TamilWeb_LinkZz">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/+PtDbTyuIU5g3ZWY1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>❤️Jᴏɪɴ Fᴀsᴛ ➼ <a href="https://telegram.dog/+6mk79iY4GIU2NWJl">ᴛᴀᴍɪʟ ᴡᴇʙ</a></b>""" 
+    CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/TamilWeb_LinkZz">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/+PtDbTyuIU5g3ZWY1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Jᴏɪɴ Fᴀsᴛ ➼ <a href="https://telegram.dog/+6mk79iY4GIU2NWJl">ᴛᴀᴍɪʟ ᴡᴇʙ</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """<b><blockquote>
 <b>Query: {qurey}
@@ -329,12 +329,8 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 💌 𝐁ᴏᴛ 𝐍ᴀᴍᴇ:-<a href=https://t.me/{}>{}</a> </b></blockquote>"""
 
     LOGO = """
-░██████╗███╗░░░███╗██████╗░██████╗░░█████╗░████████╗███████╗
-██╔════ ████╗░████║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝╚════██║
-╚█████╗░██╔████╔██║██║░░██║██████╦╝██║░░██║░░░██║░░░░░███╔═╝
-░╚═══██╗██║╚██╔╝██║██║░░██║██╔══██╗██║░░██║░░░██║░░░██╔══╝░░
-██████╔╝██║░╚═╝░██║██████╔╝██████╦╝╚█████╔╝░░░██║░░░███████╗
-╚═════╝░╚═╝░░░░░╚═╝╚═════╝░╚═════╝░░╚════╝░░░░╚═╝░░░╚══════╝"""
+
+ A C T I V A T E D"""
  
     TAMIL_INFO = """<b><blockquote>
 ஏய் <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a> 
