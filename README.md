@@ -30,29 +30,28 @@ Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://
 ## Feature 
 <b>
 
-- [x] Koyeb Sleeping Error Fixed
-- [x] If User Send Unwanted link it can be Auto Delete ( For Example 18+ Adult content Also )
-- [x] Ai Spell Check 
-- [x] Premium Plan Feature 
-- [x] Refer To Get Premium 
-- [x] Custom Force Subscribe
-- [x] Rename Feature & On / Off
-- [x] Premium And Refer On / Off 
-- [x] Stream Feature On / Off 
-- [x] Url Shortner On / Off  
-- [x] Pm Search On / Off
-- [x] Request To Join Force Subscribe With Auto File Send 
-- [x] Custom Stream
-- [x] Stream Feature With Many Player Support 
-- [x] Language & Season & Quality & Episode & Year Choose Option
-- [x] Auto Approve & On / Off
-- [x] Custom Url Shortner Support
-- [x] Token Verification & On / Off
-- [x] Send All Button 
-- [x] Custom Tutorial Button
-- [x] Bot Pm File Auto Delete
-
-- Note : You Can Turn On Or Off Every Feature, Just Use Which Feature You Want By Turning It On.
+- [x] Kᴏʏᴇʙ Sʟᴇᴇᴘɪɴɢ Eʀʀᴏʀ Fɪxᴇᴅ
+- [x] Iғ Uꜱᴇʀ Sᴇɴᴅ Uɴᴡᴀɴᴛᴇᴅ ʟɪɴᴋ ɪᴛ ᴄᴀɴ ʙᴇ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ ( Fᴏʀ Exᴀᴍᴘʟᴇ 𝟷𝟾+ Aᴅᴜʟᴛ ᴄᴏɴᴛᴇɴᴛ Aʟꜱᴏ )
+- [x] Aɪ Sᴘᴇʟʟ Cʜᴇᴄᴋ
+- [x] Pʀᴇᴍɪᴜᴍ Pʟᴀɴ Fᴇᴀᴛᴜʀᴇ
+- [x] Rᴇғᴇʀ Tᴏ Gᴇᴛ Pʀᴇᴍɪᴜᴍ
+- [x] Cᴜꜱᴛᴏᴍ Fᴏʀᴄᴇ Sᴜʙꜱᴄʀɪʙᴇ Nᴏʀᴍᴀʟ Fᴏʀᴄᴇ Sᴜʙꜱᴄʀɪʙᴇ Aɴᴅ Jᴏɪɴ Rᴇǫᴜᴇꜱᴛ Fᴏʀᴄᴇ Sᴜʙꜱᴄʀɪʙᴇ
+- [x] Rᴇɴᴀᴍᴇ Fᴇᴀᴛᴜʀᴇ & Oɴ / Oғғ
+- [x] Pʀᴇᴍɪᴜᴍ Aɴᴅ Rᴇғᴇʀ Oɴ / Oғғ
+- [x] Sᴛʀᴇᴀᴍ Fᴇᴀᴛᴜʀᴇ Oɴ / Oғғ
+- [x] Uʀʟ Sʜᴏʀᴛɴᴇʀ Oɴ / Oғғ
+- [x] Pᴍ Sᴇᴀʀᴄʜ Oɴ / Oғғ
+- [x] Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Fᴏʀᴄᴇ Sᴜʙꜱᴄʀɪʙᴇ Wɪᴛʜ Aᴜᴛᴏ Fɪʟᴇ Sᴇɴᴅ
+- [x] Cᴜꜱᴛᴏᴍ Sᴛʀᴇᴀᴍ
+- [x] Sᴛʀᴇᴀᴍ Fᴇᴀᴛᴜʀᴇ Wɪᴛʜ Mᴀɴʏ Pʟᴀʏᴇʀ Sᴜᴘᴘᴏʀᴛ
+- [x] Lᴀɴɢᴜᴀɢᴇ & Sᴇᴀꜱᴏɴ & Qᴜᴀʟɪᴛʏ & Eᴘɪꜱᴏᴅᴇ & Yᴇᴀʀ Cʜᴏᴏꜱᴇ Oᴘᴛɪᴏɴ
+- [x] Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ & Oɴ / Oғғ
+- [x] Cᴜꜱᴛᴏᴍ Uʀʟ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛ
+- [x] Tᴏᴋᴇɴ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ & Oɴ / Oғғ
+- [x] Sᴇɴᴅ Aʟʟ Bᴜᴛᴛᴏɴ
+- [x] Cᴜꜱᴛᴏᴍ Tᴜᴛᴏʀɪᴀʟ Bᴜᴛᴛᴏɴ
+- [x] Bᴏᴛ Pᴍ Fɪʟᴇ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ
+- Nᴏᴛᴇ : Yᴏᴜ Cᴀɴ Tᴜʀɴ Oɴ Oʀ Oғғ Eᴠᴇʀʏ Fᴇᴀᴛᴜʀᴇ, Jᴜꜱᴛ Uꜱᴇ Wʜɪᴄʜ Fᴇᴀᴛᴜʀᴇ Yᴏᴜ Wᴀɴᴛ Bʏ Tᴜʀɴɪɴɢ Iᴛ Oɴ.
 
 ## Deployment Support Sites
 
