@@ -49,14 +49,14 @@ Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://
 - [x] Cᴜꜱᴛᴏᴍ Uʀʟ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛ
 - [x] Tᴏᴋᴇɴ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ & Oɴ / Oғғ
 - [x] Sᴇɴᴅ Aʟʟ Bᴜᴛᴛᴏɴ
-- [x] Cᴜꜱᴛᴏᴍ Tᴜᴛᴏʀɪᴀʟ Bᴜᴛᴛᴏɴ
-- [x] Bᴏᴛ Pᴍ Fɪʟᴇ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ
+- [x] **Cᴜꜱᴛᴏᴍ Tᴜᴛᴏʀɪᴀʟ Bᴜᴛᴛᴏɴ**
+- [x] *Bᴏᴛ Pᴍ Fɪʟᴇ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ*
 - Nᴏᴛᴇ : Yᴏᴜ Cᴀɴ Tᴜʀɴ Oɴ Oʀ Oғғ Eᴠᴇʀʏ Fᴇᴀᴛᴜʀᴇ, Jᴜꜱᴛ Uꜱᴇ Wʜɪᴄʜ Fᴇᴀᴛᴜʀᴇ Yᴏᴜ Wᴀɴᴛ Bʏ Tᴜʀɴɪɴɢ Iᴛ Oɴ.
 
-## Deployment Support Sites
+## Dᴇᴘʟᴏʏᴍᴇɴᴛ Sᴜᴘᴘᴏʀᴛ Sɪᴛᴇꜱ
 
-- [x] Koyeb & Heroku & VPS & Railway & Render
-- [x] If anything Wants Talk About Deploy - Contact [ᴏᴡɴᴇʀ](https://t.me/Mobarak46)
+- [x]  *Kᴏʏᴇʙ & Hᴇʀᴏᴋᴜ & VPS & Rᴀɪʟᴡᴀʏ & Rᴇɴᴅᴇʀ*
+- [x] Iғ ᴀɴʏᴛʜɪɴɢ Wᴀɴᴛꜱ Tᴀʟᴋ Aʙᴏᴜᴛ Dᴇᴘʟᴏʏ - Cᴏɴᴛᴀᴄᴛ [ᴏᴡɴᴇʀ](https://t.me/Mobarak46)
 <details>
 <summary><h3><b>ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs :</b></h3></summary>
 <h3 align="center">
