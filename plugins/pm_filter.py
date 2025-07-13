@@ -1980,18 +1980,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴍᴏᴅᴇ', callback_data='s_txt') 
          ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
-             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele') 
+             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele1') 
          ], [ 
              InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct'), 
              InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters')
          ], [
-             InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
-             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
+             InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl1'), 
+             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share1')
          ], [
-             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
-             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json')
+             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song1'),
+             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json1')
          ], [
-             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
+             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker1'),
              InlineKeyboardButton(' ᴀᴅᴍɪɴ 🧿', callback_data='admin')
          ], [             
              InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='start')
@@ -2460,7 +2460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "tele":
+    elif query.data == "tele1":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
@@ -2476,7 +2476,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "ytdl":
+    elif query.data == "ytdl1":
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
         ]]
@@ -2490,7 +2490,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "share":
+    elif query.data == "share1":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
@@ -2506,7 +2506,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "song":
+    elif query.data == "song1":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
@@ -2522,7 +2522,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "json":
+    elif query.data == "json1":
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
         ]]
@@ -2536,7 +2536,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "sticker":
+    elif query.data == "sticker1":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
