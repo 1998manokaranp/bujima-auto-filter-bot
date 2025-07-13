@@ -2338,6 +2338,98 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
+     elif query.data == "tele1":
+        btn = [[
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
+            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.edit_text(
+            text=(script.TELE_TXT),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "ytdl1":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.YTDL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "share1":
+        btn = [[
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
+            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.edit_text(
+            text=(script.SHARE_TXT),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "song1":
+        btn = [[
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
+            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.edit_text(
+            text=(script.SONG_TXT),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "json1":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.JSON_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "sticker1":
+        btn = [[
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
+            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.edit_text(
+            text=(script.STICKER_TXT),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='admin')
@@ -2460,98 +2552,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "tele1":
-        btn = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=(script.TELE_TXT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "ytdl1":
-        buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.YTDL_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "share1":
-        btn = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=(script.SHARE_TXT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "song1":
-        btn = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=(script.SONG_TXT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "json1":
-        buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.JSON_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "sticker1":
-        btn = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=(script.STICKER_TXT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     elif query.data == "tamil_info":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="shortlink_info"),
