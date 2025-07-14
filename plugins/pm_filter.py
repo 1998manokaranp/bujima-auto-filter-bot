@@ -2350,7 +2350,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=(script.TELE_TXT),
+            text=script.TELE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2380,7 +2380,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=(script.SHARE_TXT),
+            text=script.SHARE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2396,7 +2396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=(script.SONG_TXT),
+            text=script.SONG_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2426,7 +2426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=(script.STICKER_TXT),
+            text=script.STICKER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
