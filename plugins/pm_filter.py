@@ -2338,7 +2338,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-     elif query.data == "telex":
+    elif query.data == "telex":
         btn = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
