@@ -8,7 +8,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '21678898'))
 API_HASH = environ.get('API_HASH', '2c635390c62a6164fb51aa0669ae1083')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7566096725:AAEjVZe6aBjEPzG1nXNuFCOONApCXXTSHCE")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7838452739:AAE69C4bIcO2EXcrd-hLWdK3Kq_cQU49d0o")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://graph.org/file/0885c8a160def3886953d-44ef468836477c1830.jpg https://graph.org/file/d03736ad729c4302f15cb-d267eff00f6dc35299.jpg https://graph.org/file/d71e78234b52f2bace826-be531b0002a5f576bf.jpg https://graph.org/file/2645f6a39d109041f6ec2-8291874e1aedb822c2.jpg https://graph.org/file/470f3b897e95745e53905-70c9208d181abcbb6e.jpg https://graph.org/file/8bbd523382dbde4f1c8ed-5ee2f56300d97ebf1c.jpg https://graph.org/file/dbb9e999862e3dd067a7c-67e39b5d31ee0067b2.jpg https://graph.org/file/1b15716a68e5c9a059eea-835155619597da324e.jpg https://graph.org/file/8b4a5b495f7b2064d055b-a129f8a500cabcda84.jpg https://graph.org/file/5a5e4bba53969c137e39d-f747ea72c338ac2410.jpg https://graph.org/file/2fb7b13723ce91d64c840-7a70ad8b5c23d0e47c.jpg https://graph.org/file/449ea1d3dd3c90db8a7f4-1f4e88e3793717dd70.jpg https://graph.org/file/fddf90e05adc87cad68c3-3dcf8126f0e53941d7.jpg https://graph.org/file/772b36c7a8a7a8bcd741e-a6d1b62b97dec940c8.jpg https://graph.org/file/edcab2f46d2611642d56f-4f2172e7332f20b476.jpg https://graph.org/file/f4c4a81e8aaf26b00d73e-7f9161ad1ee8f26de8.jpg https://graph.org/file/67add3db4268bbc062dae-6928979f2977a7b582.jpg https://graph.org/file/a0a86c07600eaf6d40daa-581aa73a2fdea700ad.jpg')).split()
