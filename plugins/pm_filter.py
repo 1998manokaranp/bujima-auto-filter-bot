@@ -1950,15 +1950,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "global_filters":
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='filters')
-        ]]
+        ]]  # ✅ <- This closes the [[
+
         await query.message.edit_text(text="● ◌ ◌")
         await query.message.edit_text(text="● ● ◌")
         await query.message.edit_text(text="● ● ●")
+
         await client.edit_message_media(
             chat_id=query.message.chat.id, 
             message_id=query.message.id, 
             media=InputMediaPhoto(random.choice(PICS))
         )
+
         await query.message.edit_text(
             text=script.GFILTER_TXT,
             reply_markup=InlineKeyboardMarkup(buttons),
