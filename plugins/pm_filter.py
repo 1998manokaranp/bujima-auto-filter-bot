@@ -1948,11 +1948,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "global_filters":
-    buttons = [[InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='filters')]]
-    
-    await query.message.edit_text(text="● ◌ ◌")
-    await query.message.edit_text(text="● ● ◌")
-    await query.message.edit_text(text="● ● ●")
+        buttons = [[InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='filters')]]
+        
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
     
     await client.edit_message_media(
         chat_id=query.message.chat.id, 
