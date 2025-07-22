@@ -1951,29 +1951,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='filters')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text="● ◌ ◌")
+        await query.message.edit_text(text="● ● ◌")
+        await query.message.edit_text(text="● ● ●")
         await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            chat_id=query.message.chat.id, 
+            message_id=query.message.id, 
+            media=InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.GFILTER_TXT,
-            reply_markup=reply_markup,
+            reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=enums.ParseMode.HTML
         )
-        elif query.data == "mongo":
+
+    elif query.data == "mongo":
         await query.message.edit_text(
             text="🧪 **MongoDB Test Help**\n\nThis feature for test your mongodb url.\n\n❌ Please send the MongoDB URI like this:\n`/mongo mongodb+srv://...`",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬅ Back", callback_data='start')]])
