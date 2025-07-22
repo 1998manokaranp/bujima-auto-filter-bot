@@ -1980,8 +1980,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     
     elif query.data == "help":
-        buttons = [[ 
-             [InlineKeyboardButton("ᴍᴏɴɢᴏ", callback_data="mongo"),   
+        buttons = [[
+             InlineKeyboardButton('ᴍᴏɴɢᴏ', callback_data='mongo'),   
              InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴍᴏᴅᴇ', callback_data='s_txt') 
          ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
