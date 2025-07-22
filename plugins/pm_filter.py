@@ -1973,10 +1973,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        elif query.data == "mongo":
+        await query.message.edit_text(
+            text="🧪 **MongoDB Test Help**\n\nThis feature for test your mongodb url.\n\n❌ Please send the MongoDB URI like this:\n`/mongo mongodb+srv://...`",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬅ Back", callback_data='start')]])
+        )
+        await query.answer()
     
     elif query.data == "help":
         buttons = [[ 
-             InlineKeyboardButton('ʀᴇɴᴀᴍᴇ/ᴍᴏᴅᴇ', callback_data='r_txt'),   
+             [InlineKeyboardButton("ᴍᴏɴɢᴏ", callback_data="mongo"),   
              InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴍᴏᴅᴇ', callback_data='s_txt') 
          ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
