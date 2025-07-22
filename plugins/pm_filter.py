@@ -1972,8 +1972,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         parse_mode=enums.ParseMode.HTML
     )
 
-    @Client.on_callback_query()
-async def callback_handler(client, query):
+    
+@Client.on_callback_query()
+async def callback_handler(client, query: CallbackQuery):
     if query.data == "mongo":
         await query.message.edit_text(
             text="🧪 **MongoDB Test Help**\n\nThis feature for test your mongodb url.\n\n❌ Please send the MongoDB URI like this:\n`/mongo mongodb+srv://...`",
