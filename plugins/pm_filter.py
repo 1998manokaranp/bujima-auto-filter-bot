@@ -2477,7 +2477,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "ytdl":
         buttons = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2522,7 +2522,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -3497,6 +3497,7 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
 
 
 
