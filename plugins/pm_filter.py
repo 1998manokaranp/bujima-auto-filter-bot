@@ -2477,7 +2477,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "ytdl":
         buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2486,14 +2486,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.YTDL_TXT,
+            text=(script.YTDL_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "share":
         buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2509,7 +2508,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "song":
         buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2524,7 +2522,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+            InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2533,14 +2531,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.JSON_TXT,
+            text=(script.JSON_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "sticker":
         buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -3500,5 +3497,6 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
 
 
