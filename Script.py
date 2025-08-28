@@ -587,11 +587,10 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
   
  ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ , ɪꜰ sᴘᴀᴍɪɴɢ ʜᴀᴘᴘᴇɴs ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.</b></blockquote>""" 
 
-   SHARE_TXT = """<b>
-<blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
+    SHARE_TXT = """<b>
+ <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
- - ᴇx :- /share Hello Bro
-  
- </b></blockquote>"""
+ - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
