@@ -2461,16 +2461,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "tele":
-        btn = [[
+        buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
-            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(btn)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=(script.TELE_TXT),
             reply_markup=reply_markup,
@@ -2485,13 +2484,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.YTDL_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "share":
-        btn = [[
+        buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
@@ -2500,14 +2500,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(btn)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=(script.SHARE_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "song":
-        btn = [[
+        buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
@@ -2516,7 +2516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(btn)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=(script.SONG_TXT),
             reply_markup=reply_markup,
@@ -2531,13 +2531,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.JSON_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "sticker":
-        btn = [[
+        buttons = [[
             InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help"),
             InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
         ]]
@@ -2546,7 +2547,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(btn)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=(script.STICKER_TXT),
             reply_markup=reply_markup,
@@ -3499,4 +3500,5 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
 
