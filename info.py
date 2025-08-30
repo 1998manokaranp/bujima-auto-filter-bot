@@ -6,35 +6,35 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21678898'))
-API_HASH = environ.get('API_HASH', '2c635390c62a6164fb51aa0669ae1083')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7566096725:AAEjVZe6aBjEPzG1nXNuFCOONApCXXTSHCE")
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/0885c8a160def3886953d-44ef468836477c1830.jpg https://graph.org/file/d03736ad729c4302f15cb-d267eff00f6dc35299.jpg https://graph.org/file/d71e78234b52f2bace826-be531b0002a5f576bf.jpg https://graph.org/file/2645f6a39d109041f6ec2-8291874e1aedb822c2.jpg https://graph.org/file/470f3b897e95745e53905-70c9208d181abcbb6e.jpg https://graph.org/file/8bbd523382dbde4f1c8ed-5ee2f56300d97ebf1c.jpg https://graph.org/file/dbb9e999862e3dd067a7c-67e39b5d31ee0067b2.jpg https://graph.org/file/1b15716a68e5c9a059eea-835155619597da324e.jpg https://graph.org/file/8b4a5b495f7b2064d055b-a129f8a500cabcda84.jpg https://graph.org/file/5a5e4bba53969c137e39d-f747ea72c338ac2410.jpg https://graph.org/file/2fb7b13723ce91d64c840-7a70ad8b5c23d0e47c.jpg https://graph.org/file/449ea1d3dd3c90db8a7f4-1f4e88e3793717dd70.jpg https://graph.org/file/fddf90e05adc87cad68c3-3dcf8126f0e53941d7.jpg https://graph.org/file/772b36c7a8a7a8bcd741e-a6d1b62b97dec940c8.jpg https://graph.org/file/edcab2f46d2611642d56f-4f2172e7332f20b476.jpg https://graph.org/file/f4c4a81e8aaf26b00d73e-7f9161ad1ee8f26de8.jpg https://graph.org/file/67add3db4268bbc062dae-6928979f2977a7b582.jpg https://graph.org/file/a0a86c07600eaf6d40daa-581aa73a2fdea700ad.jpg')).split()
+PICS = (environ.get('PICS', '')).split()
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 5934373010').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 5934373010').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002819996381')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002584731768').split()]  # For Multiple Id Use One Space Between Each.
-auth_channel = environ.get('AUTH_CHANNEL', '-1002318388779') # give your force subscribe channel id here else leave it blank
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None # This Is Force Subscribe Channel, also known as Auth Channel 
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL)) # This Channel Is For Index Request
-reqst_channel = environ.get('REQST_CHANNEL', '-1002139020894') # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
+reqst_channel = environ.get('REQST_CHANNEL', '') # This Channel Is For Join request FSUB 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None 
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1004618933121') # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.# This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
-REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "nazriya469") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
+DATABASE_URI = environ.get('DATABASE_URI', "")# IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "Luffybadboy") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #Modes Calls and True & False
@@ -50,7 +50,7 @@ MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month') # time in week, day, month.
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/e538e5c45b510beb3e88b.jpg') # payment code picture url. can you create the same format
+PAYMENT_QR = environ.get('PAYMENT_QR', '') # payment code picture url. can you create the same format
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>smdowner@ybl</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
 
 # Links
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
