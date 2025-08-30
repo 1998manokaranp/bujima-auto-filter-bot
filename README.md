@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://graph.org/file/5ffb3d8629fdba68be596-0221099cf5691bcc52.jpg" alt="Mubi Logo">
+  <img src="https://i.ibb.co/gM5r1VBZ/x.jpg" alt="Mubi Logo">
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -12,7 +12,7 @@
   「 ғɪʟᴛᴇʀ ʙᴏᴛ 」
 </h2>
 
-Here's a tutorial on how to deploy SMD Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://t.me/Mobarak46)</b>
+Here's a tutorial on how to deploy Bot - <b>[ᴛᴜᴛᴏʀɪᴀʟ](https://t.me/Mobarak46)</b>
 
 ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[ғɪʟᴛᴇʀ ʙᴏᴛ](https://telegram.me/Samandes_bot)</b>
 
@@ -153,3 +153,4 @@ restart - ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ...
 - ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ɢɪᴠɪɴɢ ᴍᴇ ᴄʀᴇᴅɪᴛ @Mobarak46 
 - ғᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ -> ᴛᴇʟᴇɢʀᴀᴍ @Mobarak46 Community @TamilWeb_LinkZz </b>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
