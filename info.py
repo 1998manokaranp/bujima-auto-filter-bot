@@ -33,7 +33,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set Tru
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")# IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://luffybadboy:aufHk0i9y9S4fWES@cluster0.qy2iuzb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "Luffybadboy") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
