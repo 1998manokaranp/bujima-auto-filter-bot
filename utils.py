@@ -43,6 +43,7 @@ class temp(object):
     SHORT = {}
     SETTINGS = {}
     IMDB_CAP = {}
+    ADDING_CHANNEL = {}
 
 
 async def pub_is_subscribed(bot, query, channel):
