@@ -71,10 +71,9 @@ async def is_subscribed(client, user_id):
             if REQUEST_TO_JOIN_MODE and join_db().isActive():
                 user = await join_db().get_user(user_id)
                 if user and user["user_id"] == user_id:
-                    # ✅ User has already requested to join, treat as subscribed
-                    continue  
+                    return True   # ✅ treat as subscribed immediately
 
-            # Normal check: see if user is in the channel
+            # Normal membership check
             member = await client.get_chat_member(ch['chat_id'], user_id)
             if member.status == enums.ChatMemberStatus.BANNED:
                 return False
@@ -86,6 +85,7 @@ async def is_subscribed(client, user_id):
             return False
 
     return True
+
 
 
 async def get_poster(query, bulk=False, id=False, file=None):
