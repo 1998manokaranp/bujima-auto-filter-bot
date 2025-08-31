@@ -12,6 +12,7 @@ from database.users_chats_db import db
 from database.join_reqs import JoinReqs
 from bs4 import BeautifulSoup
 from shortzy import Shortzy
+from database.fsub_db import get_force_sub_channels
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -58,36 +59,25 @@ async def pub_is_subscribed(bot, query, channel):
             pass
     return btn
 
-async def is_subscribed(bot, query):
-    if REQUEST_TO_JOIN_MODE == True and join_db().isActive():
+# By ThiruXD
+async def is_subscribed(client, user_id):
+    channels = await get_force_sub_channels()
+    for ch in channels:
         try:
-            user = await join_db().get_user(query.from_user.id)
-            if user and user["user_id"] == query.from_user.id:
-                return True
-            else:
-                try:
-                    user_data = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
-                except UserNotParticipant:
-                    pass
-                except Exception as e:
-                    logger.exception(e)
-                else:
-                    if user_data.status != enums.ChatMemberStatus.BANNED:
-                        return True
-        except Exception as e:
-            logger.exception(e)
-            return False
-    else:
-        try:
-            user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
+            if REQUEST_TO_JOIN_MODE and join_db().isActive():
+                user = await join_db().get_user(user_id)
+                if user and user["user_id"] == user_id:
+                    continue  # already requested/joined
+
+            member = await client.get_chat_member(ch['chat_id'], user_id)
+            if member.status == enums.ChatMemberStatus.BANNED:
+                return False
         except UserNotParticipant:
-            pass
+            return False
         except Exception as e:
-            logger.exception(e)
-        else:
-            if user.status != enums.ChatMemberStatus.BANNED:
-                return True
-        return False
+            logger.warning(f"Subscription check failed: {e}")
+            return False
+    return True
 
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:

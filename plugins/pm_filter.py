@@ -14,6 +14,7 @@ from database.connections_mdb import mydb, active_connection, all_connections, d
 from database.gfilters_mdb import find_gfilter, get_gfilters, del_allg
 from urllib.parse import quote_plus
 from SMDBOTz.util.file_properties import get_name, get_hash, get_media_file_size
+from database.fsub_db import get_force_sub_channels, add_force_sub_channel, remove_force_sub_channel
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
@@ -27,6 +28,52 @@ BUTTONS1 = {}
 BUTTONS2 = {}
 SPELL_CHECK = {}
 TIMEZONE = "Asia/Kolkata"
+
+# By ThiruXD
+@Client.on_callback_query(filters.regex("add_channel"))
+async def ask_channel_id(client, callback_query):
+    await callback_query.message.edit("Send the Channel ID or @username to add.")
+    temp.ADDING_CHANNEL[callback_query.from_user.id] = True
+
+# By ThiruXD
+@Client.on_message(filters.text & filters.private)
+async def receive_channel_id(client, message):
+    if not temp.ADDING_CHANNEL.get(message.from_user.id):
+        return
+
+    try:
+        chat = await client.get_chat(message.text.strip())
+        member = await client.get_chat_member(chat.id, (await client.get_me()).id)
+        ChatMemberStatus = member.status
+        if member.status != ChatMemberStatus.ADMINISTRATOR:
+            await message.reply("❌ I am not admin in that channel. Please make me admin and try again.")
+            return
+
+        await add_force_sub_channel(chat.id)
+        await message.reply(f"✅ Added channel: **{chat.title}**.")
+    except Exception as e:
+        await message.reply("⚠️ Invalid channel ID or bot not added.")
+    finally:
+        temp.ADDING_CHANNEL.pop(message.from_user.id, None)
+
+# By ThiruXD
+@Client.on_callback_query(filters.regex("view_channel:(.*)"))
+async def view_channel(client, callback_query):
+    chat_id = int(callback_query.data.split(":")[1])
+    chat = await client.get_chat(chat_id)
+    btn = [[InlineKeyboardButton("❌ Remove", callback_data=f"remove_channel:{chat_id}")]]
+    await callback_query.message.edit(
+        f"**Channel:** {chat.title}\n**ID:** `{chat.id}`",
+        reply_markup=InlineKeyboardMarkup(btn)
+    )
+
+# By ThiruXD
+@Client.on_callback_query(filters.regex("remove_channel:(.*)"))
+async def remove_channel(client, callback_query):
+    chat_id = int(callback_query.data.split(":")[1])
+    await remove_force_sub_channel(chat_id)
+    await callback_query.message.edit("✅ Channel removed.")
+
 
 async def is_check_admin(bot, chat_id, user_id):
     try:
