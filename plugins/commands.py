@@ -87,6 +87,7 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
         await asyncio.sleep(0.6)
         await m.delete()
+        await message.reply_text("Fuk you")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -148,7 +149,7 @@ async def start(client, message):
         except Exception as e:
             print(e)
             return await message.reply_text("something wrong with force subscribe.")
-    return
+
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
@@ -182,6 +183,7 @@ async def start(client, message):
                 InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
+        await message.reply_text("Bye bye Good boy")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -251,6 +253,7 @@ async def start(client, message):
             m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
             await asyncio.sleep(0.6)
             await m.delete()
+            await message.reply_text("Nakinu Poci")
             await message.reply_photo(
                 photo=random.choice(PICS),
                 caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
