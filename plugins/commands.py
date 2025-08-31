@@ -43,60 +43,8 @@ async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
-    if len(message.command) >= 2:
-        if PREMIUM_AND_REFERAL_MODE == True:
-            buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
-            ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
-            ]]
-        else:
-            buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
-            ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
-            ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("🕊️")
-        await asyncio.sleep(0.5)
-        await m.edit_text("🦋")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<pre><i>ꜱᴛᴀʀᴛɪɴɢ ᴍᴜʙɪ ғɪʟᴛᴇʀ ʙᴏᴛ...</i></pre>")
-        await asyncio.sleep(0.4)
-        await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
-        await asyncio.sleep(0.6)
-        await m.delete()
-        await message.reply_text("Fuk you")
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return
 
-    # By ThiruXD
+# By ThiruXD
     await message.reply_text("Top")
     if not await is_subscribed(client, user_id):
         await message.reply_text("Bottom")
@@ -150,6 +98,58 @@ async def start(client, message):
             print(e)
             return await message.reply_text("something wrong with force subscribe.")
 
+    if len(message.command) != 2:
+        if PREMIUM_AND_REFERAL_MODE == True:
+            buttons = [[
+                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+            ]]
+        else:
+            buttons = [[
+                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
+                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
+                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+            ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
+        await asyncio.sleep(0.4)
+        await m.edit_text("🕊️")
+        await asyncio.sleep(0.5)
+        await m.edit_text("🦋")
+        await asyncio.sleep(0.5)
+        await m.edit_text("<pre><i>ꜱᴛᴀʀᴛɪɴɢ ᴍᴜʙɪ ғɪʟᴛᴇʀ ʙᴏᴛ...</i></pre>")
+        await asyncio.sleep(0.4)
+        await m.delete()        
+        m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
+        await asyncio.sleep(0.6)
+        await m.delete()
+        await message.reply_text("Fuk you")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        return
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
