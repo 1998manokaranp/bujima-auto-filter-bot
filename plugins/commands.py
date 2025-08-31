@@ -96,7 +96,9 @@ async def start(client, message):
         return
         
     # By ThiruXD
+    await message.reply_text("Top")
     if not await is_subscribed(client, user_id):
+        await message.reply_text("Bottom")
         channels = await get_force_sub_channels()
         buttons = []
         for ch in channels:
