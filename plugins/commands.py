@@ -61,7 +61,7 @@ async def start(client, message):
                     invite_link = await SMDBOTzBot.create_chat_invite_link(ch['chat_id'])
     
                 chat = await SMDBOTzBot.get_chat(ch['chat_id'])
-                row.append(InlineKeyboardButton(chat.title, url=invite_link.invite_link))
+                row.append(InlineKeyboardButton("Join", url=invite_link.invite_link))
 
                 if len(row) == 2:
                     buttons.append(row)
