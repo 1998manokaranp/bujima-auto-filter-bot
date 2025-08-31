@@ -64,38 +64,58 @@ async def start(client, message):
 
         # Try Again button logic
         try:
-            if message.command[1] != "subscribe":
-                if REQUEST_TO_JOIN_MODE == True:
-                    if TRY_AGAIN_BTN == True:
+            if len(message.command) > 1 and message.command[1] != "subscribe":
+                arg = message.command[1]
+                if REQUEST_TO_JOIN_MODE:
+                    if TRY_AGAIN_BTN:
                         try:
-                            kk, file_id = message.command[1].split("_", 1)
+                            kk, file_id = arg.split("_", 1)
                             buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
                         except (IndexError, ValueError):
-                            buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
-                else:
-                    try:
-                        kk, file_id = message.command[1].split("_", 1)
-                        buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
-                    except (IndexError, ValueError):
-                        buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
-            if REQUEST_TO_JOIN_MODE == True:
-                if TRY_AGAIN_BTN == True:
-                    text = "**🕵️ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ᴊᴏɪɴ ᴍʏ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ғɪʀsᴛ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ**"
-                else:
-                    await db.set_msg_command(message.from_user.id, com=message.command[1])
-                    text = "**🕵️ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ᴊᴏɪɴ ᴍʏ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ғɪʀsᴛ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ**"
+                    buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={arg}")])
             else:
-                text = "**🕵️ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ᴊᴏɪɴ ᴍʏ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ғɪʀsᴛ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ**"
+                try:
+                    kk, file_id = arg.split("_", 1)
+                    buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
+                except (IndexError, ValueError):
+                    buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={arg}")])
+
+            else:
+                # Plain /start or /start subscribe → generic retry button
+                buttons.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start=subscribe")])
+
+            # Text messages depending on mode
+            if REQUEST_TO_JOIN_MODE:
+                if TRY_AGAIN_BTN:
+                    text = (
+                        "**🕵️ You have not joined my backup channel yet.**\n\n"
+                        "👉 Please join and then press **Try Again**."
+                        )
+                else:
+                    if len(message.command) > 1:
+                        await db.set_msg_command(message.from_user.id, com=message.command[1])
+                        text = (
+                            "**🕵️ You have not joined my backup channel yet.**\n\n"
+                            "👉 Please join the channel first."
+                            )
+            else:
+                text = (
+                    "**🕵️ You have not joined my backup channel yet.**\n\n"
+                    "👉 Please join and then press **Try Again**."
+                    )
+
             await client.send_message(
                 chat_id=message.from_user.id,
                 text=text,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=enums.ParseMode.MARKDOWN
-            )
-            return
+                )
+                return
+
         except Exception as e:
-            print(e)
-            return await message.reply_text(f"something wrong with force subscribe. {e}")
+            logger.error(f"Force subscribe block failed: {e}")
+            return await message.reply_text(f"⚠️ Something went wrong with force subscribe.\n\n`{e}`")
+
 
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
