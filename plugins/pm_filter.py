@@ -40,7 +40,6 @@ async def ask_channel_id(client, callback_query):
 async def receive_channel_id(client, message):
     if not temp.ADDING_CHANNEL.get(message.from_user.id):
         return
-
     try:
         chat = await client.get_chat(message.text.strip())
         member = await client.get_chat_member(chat.id, (await client.get_me()).id)
