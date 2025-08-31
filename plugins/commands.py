@@ -13,6 +13,7 @@ from urllib.parse import quote_plus
 from SMDBOTz.util.file_properties import get_name, get_hash, get_media_file_size
 logger = logging.getLogger(__name__)
 from database.fsub_db import get_force_sub_channels
+from bot import SMDBOTzBot
 
 BATCH_FILES = {}
 join_db = JoinReqs
@@ -51,11 +52,11 @@ async def start(client, message):
         for ch in channels:
             try:
                 if REQUEST_TO_JOIN_MODE:
-                    invite_link = await client.create_chat_invite_link(ch['chat_id'], creates_join_request=True)
+                    invite_link = await SMDBOTzBot.create_chat_invite_link(ch['chat_id'], creates_join_request=True)
                 else:
-                    invite_link = await client.create_chat_invite_link(ch['chat_id'])
+                    invite_link = await SMDBOTzBot.create_chat_invite_link(ch['chat_id'])
 
-                chat = await client.get_chat(ch['chat_id'])
+                chat = await SMDBOTzBot.get_chat(ch['chat_id'])
                 buttons.append([InlineKeyboardButton(chat.title, url=invite_link.invite_link)])
             except Exception as e:
                 logger.warning(f"Error generating invite link for {ch['chat_id']}: {e}")
