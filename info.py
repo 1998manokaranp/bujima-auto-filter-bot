@@ -14,17 +14,17 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "8402992165:AAE69deoQOAdnRyloX372pTy0nolZbR
 PICS = (environ.get('PICS', 'https://i.ibb.co/WNvxNy0s/x.jpg https://i.ibb.co/7d3nrLKT/x.jpg https://i.ibb.co/gZ6zWBcj/x.jpg https://i.ibb.co/p6gpPJJq/x.jpg https://i.ibb.co/0VJNFypp/x.jpg https://i.ibb.co/1fWdbXt0/x.jpg https://i.ibb.co/PvXFT7k6/x.jpg https://i.ibb.co/tPmZdVp0/x.jpg https://i.ibb.co/605SrRdy/x.jpg https://i.ibb.co/tMK3d7Lg/x.jpg https://i.ibb.co/KpSHf3VY/x.jpg https://i.ibb.co/NgkC8nBF/x.jpg https://i.ibb.co/fVr380TS/x.jpg https://i.ibb.co/RpPqsxw7/x.jpg https://i.ibb.co/p6K2DnFk/x.jpg')).split()
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8371132943').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 8371132943').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002621373825')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002603073126').split()]  # For Multiple Id Use One Space Between Each.
 auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None # This Is Force Subscribe Channel, also known as Auth Channel 
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL)) # This Channel Is For Index Request
-reqst_channel = environ.get('REQST_CHANNEL', '') # This Channel Is For Join request FSUB 
+reqst_channel = environ.get('REQST_CHANNEL', '-1002603073126') # This Channel Is For Join request FSUB 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None 
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '0') # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.# This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 
@@ -57,7 +57,7 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+PtDbTyuIU5g3ZWY1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TamilWeb_LinkZz')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TamilWeb_LinkZz') # Support Chat Link Without https://t.me or @
-OWNER_LNK = environ.get('OWNER_LNK', 'Mobarak46') # OWNER LNK Link Without https://t.me or @
+OWNER_LNK = environ.get('OWNER_LNK', 'Hardsamurai') # OWNER LNK Link Without https://t.me or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
