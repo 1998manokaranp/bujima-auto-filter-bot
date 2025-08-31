@@ -27,10 +27,12 @@ async def start(client, message):
         pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ],[
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+        ],[
+            InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -46,46 +48,35 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
+        if CLONE_MODE == True:
+            buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
-        await asyncio.sleep(0.4)
-        await m.edit_text("🕊️")
-        await asyncio.sleep(0.5)
-        await m.edit_text("🦋")
-        await asyncio.sleep(0.5)
-        await m.edit_text("<pre><i>ꜱᴛᴀʀᴛɪɴɢ ᴍᴜʙɪ ғɪʟᴛᴇʀ ʙᴏᴛ...</i></pre>")
-        await asyncio.sleep(0.4)
-        await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
-        await asyncio.sleep(0.6)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+        await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -94,11 +85,11 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-        
-    # By ThiruXD
+    
     if not await is_subscribed(client, user_id):
         channels = await get_force_sub_channels()
         buttons = []
+
         for ch in channels:
             try:
                 if REQUEST_TO_JOIN_MODE:
@@ -147,37 +138,36 @@ async def start(client, message):
             print(e)
             return await message.reply_text("something wrong with force subscribe.")
 
+    # If subscribed, show normal UI
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
+                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
+        if CLONE_MODE == True:
+            buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -187,10 +177,10 @@ async def start(client, message):
         )
         return
     data = message.command[1]
-    if data.split("-", 1)[0] == "SMD":
+    if data.split("-", 1)[0] == "VJ":
         user_id = int(data.split("-", 1)[1])
-        SMD = await referal_add_user(user_id, message.from_user.id)
-        if SMD and PREMIUM_AND_REFERAL_MODE == True:
+        vj = await referal_add_user(user_id, message.from_user.id)
+        if vj and PREMIUM_AND_REFERAL_MODE == True:
             await message.reply(f"<b>You have joined using the referral link of user with ID {user_id}\n\nSend /start again to use the bot</b>")
             num_referrals = await get_referal_users_count(user_id)
             await client.send_message(chat_id = user_id, text = "<b>{} start the bot with your referral link\n\nTotal Referals - {}</b>".format(message.from_user.mention, num_referrals))
@@ -207,46 +197,35 @@ async def start(client, message):
         else:
             if PREMIUM_AND_REFERAL_MODE == True:
                 buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 💵', callback_data='subscription'),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
-            ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
-            ]]
+                    InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                ],[
+                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
+                ],[
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                ]]
             else:
                 buttons = [[
-                InlineKeyboardButton('🤖 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇs', url=CHNL_LNK),
-                InlineKeyboardButton('🎞️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('💵 ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat='')
-            ],[
-                InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
-                InlineKeyboardButton('📡 ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('🚫 ᴄʟᴏsᴇ 🚫', callback_data='close_data')
-            ]]
+                    InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                ],[
+                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                ]]
+            if CLONE_MODE == True:
+                buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_text("<pre>ʜᴇʏ ᴅᴜᴅᴇ <b>ᴍᴜʙɪ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</pre>")
-            await asyncio.sleep(0.4)
-            await m.edit_text("🕊️")
-            await asyncio.sleep(0.5)
-            await m.edit_text("🦋")
-            await asyncio.sleep(0.5)
-            await m.edit_text("<pre><i>ꜱᴛᴀʀᴛɪɴɢ ᴍᴜʙɪ ғɪʟᴛᴇʀ ʙᴏᴛ...</i></pre>")
-            await asyncio.sleep(0.4)
-            await m.delete()        
-            m=await message.reply_sticker("CAACAgUAAxkBAAEMsXBoWiVOvpPgdbQyqWKo-PPfIeBewgACGhQAAiMMkFcx0lt5HMgQth4E") 
-            await asyncio.sleep(0.6)
+            m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+            await asyncio.sleep(1)
             await m.delete()
             await message.reply_photo(
                 photo=random.choice(PICS),
@@ -296,10 +275,10 @@ async def start(client, message):
 
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("🚀 ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🚀", url=download),
-                        InlineKeyboardButton('🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥', url=stream)
+                        InlineKeyboardButton("• ᴅᴏᴡɴʟᴏᴀᴅ •", url=download),
+                        InlineKeyboardButton('• ᴡᴀᴛᴄʜ •', url=stream)
                     ],[
-                        InlineKeyboardButton(" ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
+                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
@@ -328,11 +307,11 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{get_time(DELETE_TIME)}</code></u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
-        await asyncio.sleep(DELETE_TIME)
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
+        await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")  
+        await k.edit_text("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")  
         return
     
     elif data.split("-", 1)[0] == "DSTORE":
@@ -368,10 +347,10 @@ async def start(client, message):
  
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("🚀 ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🚀", url=download),
-                        InlineKeyboardButton('🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🖥', url=stream)
+                        InlineKeyboardButton("• ᴅᴏᴡɴʟᴏᴀᴅ •", url=download),
+                        InlineKeyboardButton('• ᴡᴀᴛᴄʜ •', url=stream)
                     ],[
-                        InlineKeyboardButton(" ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ 🖥", web_app=WebAppInfo(url=stream))
+                        InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
@@ -396,11 +375,11 @@ async def start(client, message):
             filesarr.append(p)
             await asyncio.sleep(1)
         await sts.delete()
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{get_time(DELETE_TIME)}</code></u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
-        await asyncio.sleep(DELETE_TIME)
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
+        await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
+        await k.edit_text("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
         return
 
     elif data.split("-", 1)[0] == "verify":
@@ -425,16 +404,16 @@ async def start(client, message):
         pre = 'allfilesp' if settings['file_secure'] else 'allfiles'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         btn = [[
-            InlineKeyboardButton('🗂️ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 🗂️', url=g)
+            InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ', url=g)
         ]]
         if settings['tutorial']:
-            btn.append([InlineKeyboardButton('📍 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 📍', url=await get_tutorial(chat_id))])
+            btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
         text = "<b>✅ ʏᴏᴜʀ ғɪʟᴇ ʀᴇᴀᴅʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴏᴘᴇɴ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ғɪʟᴇ\n\n</b>"
         if PREMIUM_AND_REFERAL_MODE == True:
             text += "<b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴏᴘᴇɴɪɴɢ ʟɪɴᴋ ᴀɴᴅ ᴡᴀᴛᴄʜɪɴɢ ᴀᴅs ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plan ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>"
         k = await client.send_message(chat_id=message.from_user.id, text=text, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(300)
-        await k.edit("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
+        await k.edit("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
         return
         
     
@@ -445,16 +424,16 @@ async def start(client, message):
         pre = 'filep' if settings['file_secure'] else 'file'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         btn = [[
-            InlineKeyboardButton('🗂️ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 🗂️', url=g)
+            InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ', url=g)
         ]]
         if settings['tutorial']:
-            btn.append([InlineKeyboardButton('📍 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 📍', url=await get_tutorial(chat_id))])
+            btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
         text = "<b>✅ ʏᴏᴜʀ ғɪʟᴇ ʀᴇᴀᴅʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴏᴘᴇɴ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ғɪʟᴇ\n\n</b>"
         if PREMIUM_AND_REFERAL_MODE == True:
             text += "<b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴏᴘᴇɴɪɴɢ ʟɪɴᴋ ᴀɴᴅ ᴡᴀᴛᴄʜɪɴɢ ᴀᴅs ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plan ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>"
         k = await client.send_message(chat_id=user, text=text, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(1200)
-        await k.edit("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
+        await k.edit("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
         return
         
     elif data.startswith("all"):
@@ -492,7 +471,7 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button = [[InlineKeyboardButton('🚀ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ/ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ🖥️', callback_data=f'generate_stream_link:{file_id}')],[InlineKeyboardButton('📌ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ɢʀᴏᴜᴘ📌', url=GRP_LNK)]]
+                button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
                 reply_markup=InlineKeyboardMarkup(button)
             else:
                 reply_markup = None
@@ -504,11 +483,11 @@ async def start(client, message):
                 reply_markup=reply_markup
             )
             filesarr.append(msg)
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <<b><u><code>{get_time(DELETE_TIME)}</code></u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
-        await asyncio.sleep(DELETE_TIME)
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
+        await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
+        await k.edit_text("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
         return    
         
     elif data.startswith("files"):
@@ -522,16 +501,16 @@ async def start(client, message):
         if settings['is_shortlink'] and not await db.has_premium_access(user):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
             btn = [[
-                InlineKeyboardButton('🗂️ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 🗂️', url=g)
+                InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ', url=g)
             ]]
             if settings['tutorial']:
-                btn.append([InlineKeyboardButton('📍 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 📍', url=await get_tutorial(chat_id))])
+                btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
             text = "<b>✅ ʏᴏᴜʀ ғɪʟᴇ ʀᴇᴀᴅʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴏᴘᴇɴ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ғɪʟᴇ\n\n</b>"
             if PREMIUM_AND_REFERAL_MODE == True:
                 text += "<b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴏᴘᴇɴɪɴɢ ʟɪɴᴋ ᴀɴᴅ ᴡᴀᴛᴄʜɪɴɢ ᴀᴅs ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plan ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>"
             k = await client.send_message(chat_id=message.from_user.id, text=text, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1200)
-            await k.edit("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
+            await k.edit("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ</b>")
             return
     user = message.from_user.id
     files_ = await get_file_details(file_id)           
@@ -555,7 +534,7 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button = [[InlineKeyboardButton('🚀ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ/ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ🖥️', callback_data=f'generate_stream_link:{file_id}')],[InlineKeyboardButton('📌ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ɢʀᴏᴜᴘ📌', url=GRP_LNK)]]
+                button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
                 reply_markup=InlineKeyboardMarkup(button)
             else:
                 reply_markup = None
@@ -576,11 +555,11 @@ async def start(client, message):
                 except:
                     return
             await msg.edit_caption(caption=f_caption)
-            btn = [[InlineKeyboardButton("❗️ ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ ❗️", callback_data=f'del#{file_id}')]]
-            k = await msg.reply(text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{get_time(DELETE_TIME)}</code></u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
-            await asyncio.sleep(DELETE_TIME)
+            btn = [[InlineKeyboardButton("✅ ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ ✅", callback_data=f'del#{file_id}')]]
+            k = await msg.reply(text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
+            await asyncio.sleep(600)
             await msg.delete()
-            await k.edit_text("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀɢᴀɪɴ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ</b>",reply_markup=InlineKeyboardMarkup(btn))
+            await k.edit_text("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀɢᴀɪɴ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
         except:
             pass
@@ -613,7 +592,7 @@ async def start(client, message):
             )
             return
     if STREAM_MODE == True:
-        button = [[InlineKeyboardButton('🚀ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ/ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ🖥️', callback_data=f'generate_stream_link:{file_id}')],[InlineKeyboardButton('📌ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ɢʀᴏᴜᴘ📌', url=GRP_LNK)]]
+        button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
         reply_markup=InlineKeyboardMarkup(button)
     else:
         reply_markup = None
@@ -624,11 +603,11 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=reply_markup
     )
-    btn = [[InlineKeyboardButton("❗️ ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ ❗️", callback_data=f'del#{file_id}')]]
-    k = await msg.reply(text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{get_time(DELETE_TIME)}</code></u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
-    await asyncio.sleep(DELETE_TIME)
+    btn = [[InlineKeyboardButton("✅ ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ ✅", callback_data=f'del#{file_id}')]]
+    k = await msg.reply(text=f"<blockquote><b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs)</i>.\n\n<b><i>ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴏʀ ᴀɴʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ.</i></b></blockquote>")
+    await asyncio.sleep(600)
     await msg.delete()
-    await k.edit_text("<b>🔐 ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀɢᴀɪɴ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ</b>",reply_markup=InlineKeyboardMarkup(btn))
+    await k.edit_text("<b>✅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀɢᴀɪɴ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
