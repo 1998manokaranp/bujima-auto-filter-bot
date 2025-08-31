@@ -64,22 +64,29 @@ async def pub_is_subscribed(bot, query, channel):
 # By ThiruXD
 async def is_subscribed(client, user_id):
     channels = await get_force_sub_channels()
+
     for ch in channels:
         try:
+            # If request-to-join mode is active
             if REQUEST_TO_JOIN_MODE and join_db().isActive():
                 user = await join_db().get_user(user_id)
                 if user and user["user_id"] == user_id:
-                    continue  # already requested/joined
+                    # ✅ User has already requested to join, treat as subscribed
+                    continue  
 
+            # Normal check: see if user is in the channel
             member = await client.get_chat_member(ch['chat_id'], user_id)
             if member.status == enums.ChatMemberStatus.BANNED:
                 return False
+
         except UserNotParticipant:
             return False
         except Exception as e:
             logger.warning(f"Subscription check failed: {e}")
             return False
+
     return True
+
 
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
