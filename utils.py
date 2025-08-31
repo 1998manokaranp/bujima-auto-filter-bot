@@ -13,6 +13,7 @@ from database.join_reqs import JoinReqs
 from bs4 import BeautifulSoup
 from shortzy import Shortzy
 from database.fsub_db import get_force_sub_channels
+from pyrogram.errors import UserNotParticipant
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
