@@ -14,8 +14,8 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7975609416:AAFzIuAIJt1Yu6Jkfo9zvCeuyJ7eyHi
 PICS = (environ.get('PICS', 'https://i.ibb.co/WNvxNy0s/x.jpg https://i.ibb.co/7d3nrLKT/x.jpg https://i.ibb.co/gZ6zWBcj/x.jpg https://i.ibb.co/p6gpPJJq/x.jpg https://i.ibb.co/0VJNFypp/x.jpg https://i.ibb.co/1fWdbXt0/x.jpg https://i.ibb.co/PvXFT7k6/x.jpg https://i.ibb.co/tPmZdVp0/x.jpg https://i.ibb.co/605SrRdy/x.jpg https://i.ibb.co/tMK3d7Lg/x.jpg https://i.ibb.co/KpSHf3VY/x.jpg https://i.ibb.co/NgkC8nBF/x.jpg https://i.ibb.co/fVr380TS/x.jpg https://i.ibb.co/RpPqsxw7/x.jpg https://i.ibb.co/p6K2DnFk/x.jpg')).split()
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8371132943').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 8371132943 1989750989').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8371132943 1989750989').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 8371132943').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002621373825')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002603073126').split()]  # For Multiple Id Use One Space Between Each.
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
