@@ -18,7 +18,8 @@ BATCH_FILES = {}
 join_db = JoinReqs
 
 @Client.on_message(filters.command("start") & filters.incoming)
-async def start(client, message):
+async def start(client, message):    user = message.from_user
+    user_id = message.from_user.id
     try:
         await message.react(emoji=random.choice(REACTIONS), big=True)
     except:
@@ -94,7 +95,7 @@ async def start(client, message):
         return
         
     # By ThiruXD
-    if not await is_subscribed(client, message):
+    if not await is_subscribed(client, user_id):
         channels = await get_force_sub_channels()
         buttons = []
         for ch in channels:
