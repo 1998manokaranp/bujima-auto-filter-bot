@@ -8,7 +8,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22175614'))
 API_HASH = environ.get('API_HASH', '5dab14fb645d7c6b5f8d094581192e04')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8402992165:AAE69deoQOAdnRyloX372pTy0nolZbRKeDM")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7975609416:AAFzIuAIJt1Yu6Jkfo9zvCeuyJ7eyHiMdYU")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://i.ibb.co/WNvxNy0s/x.jpg https://i.ibb.co/7d3nrLKT/x.jpg https://i.ibb.co/gZ6zWBcj/x.jpg https://i.ibb.co/p6gpPJJq/x.jpg https://i.ibb.co/0VJNFypp/x.jpg https://i.ibb.co/1fWdbXt0/x.jpg https://i.ibb.co/PvXFT7k6/x.jpg https://i.ibb.co/tPmZdVp0/x.jpg https://i.ibb.co/605SrRdy/x.jpg https://i.ibb.co/tMK3d7Lg/x.jpg https://i.ibb.co/KpSHf3VY/x.jpg https://i.ibb.co/NgkC8nBF/x.jpg https://i.ibb.co/fVr380TS/x.jpg https://i.ibb.co/RpPqsxw7/x.jpg https://i.ibb.co/p6K2DnFk/x.jpg')).split()
@@ -34,7 +34,7 @@ TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (T
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://luffybadboy:aufHk0i9y9S4fWES@cluster0.qy2iuzb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "Luffybadboy") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
+DATABASE_NAME = environ.get('DATABASE_NAME', "profilterbot") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #Modes Calls and True & False
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
