@@ -49,18 +49,30 @@ async def start(client, message):
     if not await is_subscribed(client, user_id):
         channels = await get_force_sub_channels()
         buttons = []
+        row = []
+
         for ch in channels:
             try:
                 if REQUEST_TO_JOIN_MODE:
-                    invite_link = await SMDBOTzBot.create_chat_invite_link(ch['chat_id'], creates_join_request=True)
+                    invite_link = await SMDBOTzBot.create_chat_invite_link(
+                        ch['chat_id'], creates_join_request=True
+                    )
                 else:
                     invite_link = await SMDBOTzBot.create_chat_invite_link(ch['chat_id'])
-
+    
                 chat = await SMDBOTzBot.get_chat(ch['chat_id'])
-                buttons.append([InlineKeyboardButton(chat.title, url=invite_link.invite_link)])
+                row.append(InlineKeyboardButton(chat.title, url=invite_link.invite_link))
+
+                if len(row) == 2:
+                    buttons.append(row)
+                    row = []
+
             except Exception as e:
                 logger.warning(f"Error generating invite link for {ch['chat_id']}: {e}")
                 continue
+        if row:
+            buttons.append(row)
+
 
         # Try Again button logic
         try:
