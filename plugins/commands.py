@@ -95,7 +95,7 @@ async def start(client, message):
             return
         except Exception as e:
             print(e)
-            return await message.reply_text("something wrong with force subscribe.")
+            return await message.reply_text(f"something wrong with force subscribe. {e}")
 
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
