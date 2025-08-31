@@ -18,7 +18,8 @@ BATCH_FILES = {}
 join_db = JoinReqs
 
 @Client.on_message(filters.command("start") & filters.incoming)
-async def start(client, message):    user = message.from_user
+async def start(client, message):
+    user = message.from_user
     user_id = message.from_user.id
     try:
         await message.react(emoji=random.choice(REACTIONS), big=True)
