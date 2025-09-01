@@ -3,13 +3,13 @@ class script(object):
 ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟꜰɪʟᴛᴇʀ ʙᴏᴛ.
 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !
 
-<b><blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Mobarak46">Mᴜʙɪ</a></b></b></blockquote>"""
+<b><blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Soulheartbeat">sᴏᴜʟ</a></b></b></blockquote>"""
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b></b>"""
 
     ABOUT_TXT = """<b>✯ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-✯ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/{}>Mᴜʙɪ</a>
+✯ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/{}>sᴏᴜʟ</a>
 ✯ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ✯ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ✯ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -203,7 +203,7 @@ Nᴀᴍᴇ - {}</b></blockquote>"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> </b></blockquote>"""
 
-    CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/TamilWeb_LinkZz">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/+PtDbTyuIU5g3ZWY1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Jᴏɪɴ Fᴀsᴛ ➼ <a href="https://telegram.dog/+6mk79iY4GIU2NWJl">ᴛᴀᴍɪʟ ᴡᴇʙ</a></b>""" 
+    CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/+AVxJNDMxCjkyM2U1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/Tamil_chat_New_Tamil_HD_Movie">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Lᴏᴠᴇ ᴇᴅɪᴛᴢ ➼ <a href="https://telegram.dog/Tamil_Love_Whatsapp_Video_Songs">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """<b><blockquote>
 <b>Query: {qurey}
@@ -591,6 +591,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
  <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
  - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
 
