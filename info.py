@@ -11,13 +11,13 @@ API_HASH = environ.get('API_HASH', '846c4a2d3d96b4891d1c689094365f11')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7786273560:AAH-Xbv9lYdKCSrUcJgHboy3xxUJGqsmX-A")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/1GYkn7s9/x.jpg https://i.ibb.co/gb4Hvq89/x.jpg https://i.ibb.co/Csn2b7XL/x.jpg https://i.ibb.co/Xk2nXT7w/x.jpg https://i.ibb.co/1G45KsLn/x.jpg https://i.ibb.co/b57nSbkN/x.jpg https://i.ibb.co/rf7xRMrb/x.jpg https://i.ibb.co/BKSrf0x2/x.jpg https://i.ibb.co/TMb8DSJ6/x.jpg https://i.ibb.co/rR9tg9Sd/x.jpg https://i.ibb.co/mCr62LvC/x.jpg https://i.ibb.co/YJKy1qs/x.jpg https://i.ibb.co/BKtdNhX1/x.jpg https://i.ibb.co/wZzS9KXC/x.jpg https://i.ibb.co/N66zT1nw/x.jpg')).split()
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8371132943 1989750989').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 8371132943').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8079968449').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1491400016 8079968449').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002621373825')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002058704187')) # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002603073126').split()]  # For Multiple Id Use One Space Between Each.
 auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None # This Is Force Subscribe Channel, also known as Auth Channel 
@@ -33,8 +33,8 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://luffybadboy:aufHk0i9y9S4fWES@cluster0.qy2iuzb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "profilterbot") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://121manokaran:RrQU9aVnFnEwonSX@cluster0.uxizm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "Soulheartbeat") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #Modes Calls and True & False
@@ -54,10 +54,10 @@ PAYMENT_QR = environ.get('PAYMENT_QR', '') # payment code picture url. can you c
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>smdowner@ybl</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+PtDbTyuIU5g3ZWY1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TamilWeb_LinkZz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TamilWeb_LinkZz') # Support Chat Link Without https://t.me or @
-OWNER_LNK = environ.get('OWNER_LNK', 'Hardsamurai') # OWNER LNK Link Without https://t.me or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Tamil_chat_New_Tamil_HD_Movie')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+AVxJNDMxCjkyM2U1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Soulheartbeats') # Support Chat Link Without https://t.me or @
+OWNER_LNK = environ.get('OWNER_LNK', 'Soulheartbeat') # OWNER LNK Link Without https://t.me or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -123,7 +123,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://profilterbot-imtr.onrender.com/")
+URL = environ.get("URL", "")
 
 # Start Command Reactions
 REACTIONS = ["🦋", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"] #don't add any emoji because tg not support all emoji reactions
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
