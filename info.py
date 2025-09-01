@@ -6,12 +6,12 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22175614'))
-API_HASH = environ.get('API_HASH', '5dab14fb645d7c6b5f8d094581192e04')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7975609416:AAFzIuAIJt1Yu6Jkfo9zvCeuyJ7eyHiMdYU")
+API_ID = int(environ.get('API_ID', '24179378'))
+API_HASH = environ.get('API_HASH', '846c4a2d3d96b4891d1c689094365f11')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7786273560:AAH-Xbv9lYdKCSrUcJgHboy3xxUJGqsmX-A")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://i.ibb.co/WNvxNy0s/x.jpg https://i.ibb.co/7d3nrLKT/x.jpg https://i.ibb.co/gZ6zWBcj/x.jpg https://i.ibb.co/p6gpPJJq/x.jpg https://i.ibb.co/0VJNFypp/x.jpg https://i.ibb.co/1fWdbXt0/x.jpg https://i.ibb.co/PvXFT7k6/x.jpg https://i.ibb.co/tPmZdVp0/x.jpg https://i.ibb.co/605SrRdy/x.jpg https://i.ibb.co/tMK3d7Lg/x.jpg https://i.ibb.co/KpSHf3VY/x.jpg https://i.ibb.co/NgkC8nBF/x.jpg https://i.ibb.co/fVr380TS/x.jpg https://i.ibb.co/RpPqsxw7/x.jpg https://i.ibb.co/p6K2DnFk/x.jpg')).split()
+PICS = (environ.get('PICS', '')).split()
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8371132943 1989750989').split()] # For Multiple Id Use One Space Between Each.
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
