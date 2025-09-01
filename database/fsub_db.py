@@ -1,4 +1,4 @@
-# By ThiruXD
+# By @Mobarak46
 
 from pymongo import MongoClient
 from info import DATABASE_URI, DATABASE_NAME
