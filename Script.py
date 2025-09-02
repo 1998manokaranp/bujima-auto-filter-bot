@@ -194,14 +194,7 @@ Nᴀᴍᴇ - {}</b></blockquote>"""
 
     SINFO = """<b><blockquote>🫣 For Movie Join First Then Click On Try Again Button 😅</b></blockquote>"""
 
-    NORSLTS = """<b><blockquote>
-★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
-
-𝗜𝗗 <b>: {}</b>
-
-𝗡𝗮𝗺𝗲 <b>: {}</b>
-
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> </b></blockquote>"""
+    NORSLTS = """<b><blockquote>★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★ \n\n𝗜𝗗 <b>: {}</b>𝗡𝗮𝗺𝗲 <b>: {}</b> \n\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> </b></blockquote>"""
 
     CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/+AVxJNDMxCjkyM2U1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/Tamil_chat_New_Tamil_HD_Movie">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Lᴏᴠᴇ ᴇᴅɪᴛᴢ ➼ <a href="https://telegram.dog/Tamil_Love_Whatsapp_Video_Songs">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>""" 
 
@@ -591,6 +584,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
  <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
  - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
 
