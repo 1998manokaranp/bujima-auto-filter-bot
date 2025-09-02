@@ -170,13 +170,32 @@ async def give_filter(client, message):
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
     content = message.text
-    user = message.from_user.first_name
-    user_id = message.from_user.id
-    if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    if PM_SEARCH == True:
+    if content.startswith("/") or content.startswith("#"):
+        return  # ignore commands and hashtags
+    
+    if PM_SEARCH:
         ai_search = True
-        reply_msg = await bot.send_message(message.from_user.id, f"<b>𝐒ᴇᴀʀᴄʜɪɴɢ 𝐅ᴏʀ {content} 🔍</b>", reply_to_message_id=message.id)
-        await auto_filter(bot, content, message, reply_msg, ai_search)
+        reply_msg = await bot.send_message(
+            message.from_user.id,
+            f"<b>𝐒ᴇᴀʀᴄʜɪɴɢ 𝐅ᴏʀ {content} 🔍</b>",
+            reply_to_message_id=message.id
+        )
+
+        found = await auto_filter(bot, content, message, reply_msg, ai_search)
+
+        if not found and NO_RESULTS_MSG:
+            try:
+                await bot.send_message(
+                    chat_id=LOG_CHANNEL,
+                    text=script.NORSLTS.format(
+                        message.from_user.id,
+                        message.from_user.mention,
+                        content
+                    ),
+                    parse_mode="html"
+                )
+            except Exception as e:
+                print("No-results logging failed:", e)
     
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
@@ -3543,6 +3562,7 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
 
 
 
