@@ -111,14 +111,14 @@ async def join_is_subscribed(bot, query, channels):
     btn = []
     for channel in channels:
         try:
-            user = await join_db().get_user(query.from_user.id, int(channel))
-            if user and user["user_id"] == query.from_user.id and user["channel_id"] == channel:
+            user = await join_db().get_user(query.from_user.id, int(channel["channel_id"]))
+            if user and user["user_id"] == query.from_user.id and user["channel_id"] == channel["channel_id"]:
                 return
             else:
                 try:
-                    user_data = await bot.get_chat_member(int(channel), query.from_user.id)
+                    user_data = await bot.get_chat_member(int(channel["channel_id"]), query.from_user.id)
                 except UserNotParticipant:
-                    chat = await bot.create_chat_invite_link(chat_id=(int(channel)), creates_join_request=True)
+                    chat = await bot.create_chat_invite_link(chat_id=(int(channel["channel_id"])), creates_join_request=True)
                     btn.append(
                         [InlineKeyboardButton('Join', url=chat.invite_link)]
                     )
@@ -140,6 +140,7 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
 
 
