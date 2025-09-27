@@ -8,7 +8,7 @@ from pyrogram.errors import *
 
 # MongoDB setup
 old_client = MongoClient(DATABASE_URI)
-old_db = old_client['techvj']
+old_db = old_client['techvjbot']
 channels_collection = old_db['channels']
 
 class JoinReqs:
@@ -17,7 +17,7 @@ class JoinReqs:
         if DATABASE_URI:
             self.client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
             self.db = self.client["JoinReqs"]
-            self.col = self.db["techvj"]
+            self.col = self.db["techvjbot"]
         else:
             self.client = None
             self.db = None
@@ -140,6 +140,7 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
 
 
