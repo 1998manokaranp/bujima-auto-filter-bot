@@ -1,5 +1,5 @@
 import motor.motor_asyncio
-from info import DATABASE_URI
+from info import DATABASE_URI, ADMINS
 import os
 from pyrogram import Client, filters, enums
 from pymongo import MongoClient
@@ -51,10 +51,10 @@ class JoinReqs:
         return await self.col.count_documents({})
 
 
-@Client.on_message(filters.private & filters.command("add_channel"))
+@Client.on_message(filters.private & filters.command("add_channel") & filters.user(ADMINS))
 async def add_channel(client, message):
     if len(message.command) != 2:
-        await message.reply("Usage: /add_channel <channel_id>")
+        await message.reply("Usage: /add_channel channel_id")
         return
 
     channel_id = message.command[1]
@@ -78,10 +78,10 @@ async def add_channel(client, message):
     except Exception as e:
         message.reply(f"Error: {str(e)}")
 
-@Client.on_message(filters.private & filters.command("delete_channel"))
+@Client.on_message(filters.private & filters.command("delete_channel") & filters.user(ADMINS))
 async def delete_channel(client, message):
     if len(message.command) != 2:
-        await message.reply("Usage: /delete_channel <channel_id>")
+        await message.reply("Usage: /delete_channel channel_id")
         return
 
     channel_id = message.command[1]
@@ -92,7 +92,7 @@ async def delete_channel(client, message):
     else:
         await message.reply("Channel ID not found.")
 
-@Client.on_message(filters.private & filters.command("list_channels"))
+@Client.on_message(filters.private & filters.command("list_channels") & filters.user(ADMINS))
 async def list_channels(client, message):
     channels = channels_collection.find()
     if channels.count() == 0:
@@ -140,4 +140,5 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
