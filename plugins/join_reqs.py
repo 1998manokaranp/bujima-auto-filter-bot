@@ -61,7 +61,7 @@ async def add_channel(client, message):
 
     try:
         try:
-            info = await client.get_chat(channel_id)
+            info = await client.get_chat(int(channel_id))
         except:
             await message.reply("Please make me an admin in this channel.")
             return
@@ -140,5 +140,6 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
 
