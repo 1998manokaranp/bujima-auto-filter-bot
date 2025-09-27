@@ -113,7 +113,7 @@ async def join_is_subscribed(bot, query, channels):
         try:
             user = await join_db().get_user(query.from_user.id, int(channel["channel_id"]))
             if user and user["user_id"] == query.from_user.id and user["channel_id"] == channel["channel_id"]:
-                return
+                continue 
             else:
                 try:
                     user_data = await bot.get_chat_member(int(channel["channel_id"]), query.from_user.id)
@@ -140,6 +140,7 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
 
 
