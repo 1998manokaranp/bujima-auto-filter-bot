@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 join_db = JoinReqs
 
-@Client.on_chat_join_request((filters.group | filters.channel))
+#@Client.on_chat_join_request((filters.group | filters.channel))
 async def auto_approve(client, message: ChatJoinRequest):
     if AUTO_APPROVE_MODE == True:
         if not await db.is_user_exist(message.from_user.id):
