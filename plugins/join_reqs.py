@@ -124,9 +124,9 @@ async def join_is_subscribed(bot, query, channels):
                     )
                 except Exception as e:
                     pass
-            return btn
         except Exception as e:
             print(e)
+    return btn
 
 
 @Client.on_chat_join_request((filters.group | filters.channel))
@@ -140,6 +140,7 @@ async def join_auto_approve(client, message: ChatJoinRequest):
     chat = message.chat.id
     await join_db().add_user(user_id=ap_user_id, first_name=first_name, username=username, date=date, channel_id=chat)
   
+
 
 
 
