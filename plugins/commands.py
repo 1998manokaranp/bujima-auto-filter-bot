@@ -7,6 +7,7 @@ from database.ia_filterdb import col, sec_col, get_file_details, unpack_new_file
 from database.users_chats_db import db, delete_all_referal_users, get_referal_users_count, get_referal_all_users, referal_add_user
 from database.join_reqs import JoinReqs
 from info import *
+from plugins.join_reqs import join_is_subscribed, channels_collection
 from utils import get_time, get_settings, pub_is_subscribed, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial, get_seconds
 from database.connections_mdb import active_connection
 from urllib.parse import quote_plus
@@ -45,8 +46,9 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
 
-# By ThiruXD
-    if not await is_subscribed(client, user_id):
+    # By ThiruXD
+    vj = True
+    if not await is_subscribed(client, user_id) and not vj:
         channels = await get_force_sub_channels()
         buttons = []
         row = []
@@ -140,6 +142,20 @@ async def start(client, message):
             logger.error(f"Force subscribe block failed: {e}")
             await message.reply_text(f"⚠️ Something went wrong with force subscribe.\n\n`{e}`")
             return
+
+    channels = channels_collection.find()
+    if channels:
+        try:
+            btn = await join_is_subscribed(client, message, channels)
+            if btn:
+                if len(message.command) > 1 and message.command[1] != "subscribe":
+                    btn.append([InlineKeyboardButton("♻️ ᴛʀʏ ᴀɢᴀɪɴ ♻️", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                else:
+                    btn.append([InlineKeyboardButton("↻ ᴛʀʏ ᴀɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start=subscribe")])
+                await message.reply_text(text=f"👋 Hello {message.from_user.mention},\n\nPlease join the channel then click on try again button. 😇", reply_markup=InlineKeyboardMarkup(btn), parse_mode=enums.ParseMode.HTML)
+                return
+        except Exception as e:
+            print(e)
 
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
@@ -1490,4 +1506,5 @@ async def show_chandnels(client, message):
     ]
     buttons.append([InlineKeyboardButton("➕ Add Channel", callback_data="add_channel")])
     await message.reply("📢 Manage Force-Subscribe Channels", reply_markup=InlineKeyboardMarkup(buttons))
+
 
