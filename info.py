@@ -34,7 +34,7 @@ TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (T
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://1998manokaran_db_user:vknwQX9f4rPlKNg5@cluster0.e9ml3n3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "Soulheartbeat") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
+DATABASE_NAME = environ.get('DATABASE_NAME', "Soulheartbeatfilterbot") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #Modes Calls and True & False
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
