@@ -8,7 +8,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '24179378'))
 API_HASH = environ.get('API_HASH', '846c4a2d3d96b4891d1c689094365f11')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7786273560:AAH-Xbv9lYdKCSrUcJgHboy3xxUJGqsmX-A")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8210148855:AAGBmFuEA5KjSxzdI8Qrhsl-1dZ00Z-B79c")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://i.ibb.co/1GYkn7s9/x.jpg https://i.ibb.co/gb4Hvq89/x.jpg https://i.ibb.co/Csn2b7XL/x.jpg https://i.ibb.co/Xk2nXT7w/x.jpg https://i.ibb.co/1G45KsLn/x.jpg https://i.ibb.co/b57nSbkN/x.jpg https://i.ibb.co/rf7xRMrb/x.jpg https://i.ibb.co/BKSrf0x2/x.jpg https://i.ibb.co/TMb8DSJ6/x.jpg https://i.ibb.co/rR9tg9Sd/x.jpg https://i.ibb.co/mCr62LvC/x.jpg https://i.ibb.co/YJKy1qs/x.jpg https://i.ibb.co/BKtdNhX1/x.jpg https://i.ibb.co/wZzS9KXC/x.jpg https://i.ibb.co/N66zT1nw/x.jpg')).split()
@@ -33,7 +33,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://121manokaran:RrQU9aVnFnEwonSX@cluster0.uxizm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://1998manokaran_db_user:vknwQX9f4rPlKNg5@cluster0.e9ml3n3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")# IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "Soulheartbeat") #nazriya469 #mongodb+srv://tylerdurden7xz:pBpOdtKaMNOLslLW@leocluster0.xih0ctx.mongodb.net/?retryWrites=true&w=majority&appName=LeoCluster0
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
