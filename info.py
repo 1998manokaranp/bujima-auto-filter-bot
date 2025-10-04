@@ -11,7 +11,7 @@ API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://i.ibb.co/1GYkn7s9/x.jpg https://i.ibb.co/gb4Hvq89/x.jpg https://i.ibb.co/Csn2b7XL/x.jpg https://i.ibb.co/Xk2nXT7w/x.jpg https://i.ibb.co/1G45KsLn/x.jpg https://i.ibb.co/b57nSbkN/x.jpg https://i.ibb.co/rf7xRMrb/x.jpg https://i.ibb.co/BKSrf0x2/x.jpg https://i.ibb.co/TMb8DSJ6/x.jpg https://i.ibb.co/rR9tg9Sd/x.jpg https://i.ibb.co/mCr62LvC/x.jpg https://i.ibb.co/YJKy1qs/x.jpg https://i.ibb.co/BKtdNhX1/x.jpg https://i.ibb.co/wZzS9KXC/x.jpg https://i.ibb.co/N66zT1nw/x.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/Q3qqkF71/x.jpg https://i.ibb.co/TJ5JdQR/x.jpg https://i.ibb.co/d433j46Z/x.jpg https://i.ibb.co/60jTMLMj/x.jpg https://i.ibb.co/TBWjyQdV/x.jpg https://i.ibb.co/Z6nDcZyg/x.jpg https://i.ibb.co/23QWvRfc/x.jpg https://i.ibb.co/DPjsyCgt/x.jpg https://i.ibb.co/3yJGPK8z/x.jpg https://i.ibb.co/F4NBM99C/x.jpg https://i.ibb.co/Z1T97h5q/x.jpg https://i.ibb.co/Z1FTxX0r/x.jpg https://i.ibb.co/G4w5QjVN/x.jpg https://i.ibb.co/zTdJw86t/x.jpg https://i.ibb.co/wFmLvYG0/x.jpg https://i.ibb.co/WN3j2P3p/x.jpg https://i.ibb.co/p6zj7Kw8/x.jpg https://i.ibb.co/3yjGPSDP/x.jpg https://i.ibb.co/27CXGp2b/x.jpg https://i.ibb.co/Xrq7JHfd/x.jpg https://i.ibb.co/mCTW950v/x.jpg')).split()
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491400016 8079968449').split()] # For Multiple Id Use One Space Between Each.
@@ -72,7 +72,7 @@ LONG_IMDB_DESCRIPTION = bool(environ.get("LONG_IMDB_DESCRIPTION", False))
 SPELL_CHECK_REPLY = bool(environ.get("SPELL_CHECK_REPLY", True))
 MELCOW_NEW_USERS = bool(environ.get('MELCOW_NEW_USERS', True))
 PROTECT_CONTENT = bool(environ.get('PROTECT_CONTENT', False))
-PUBLIC_FILE_STORE = bool(environ.get('PUBLIC_FILE_STORE', True))
+PUBLIC_FILE_STORE = bool(environ.get('PUBLIC_FILE_STORE', False))
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
@@ -144,6 +144,7 @@ else:
     OTHER_DB_URI = O_DB_URI       # This Db Is For Other Data Store
     FILE_DB_URI = F_DB_URI        # This Db Is For File Data Store
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
+
 
 
 
