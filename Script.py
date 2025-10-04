@@ -141,11 +141,13 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     LOG_TEXT_G = """<b><blockquote>#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-Aᴅᴅᴇᴅ Bʏ - {}</b></blockquote>"""
+Aᴅᴅᴇᴅ Bʏ - {}
+Bᴏᴛ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></b></blockquote>"""
 
     LOG_TEXT_P = """<b><blockquote>#NewUser
 ID - <code>{}</code>
-Nᴀᴍᴇ - {}</b></blockquote>"""
+Nᴀᴍᴇ - {}
+Bᴏᴛ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></b></blockquote>"""
 
     ALRT_TXT = """<b><blockquote>ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -584,6 +586,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
  <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
  - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
 
