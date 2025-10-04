@@ -27,7 +27,7 @@ sʜᴀʀᴇ ʏᴏᴜʀ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴀɴᴅ ᴇᴀʀɴ ʀᴇᴡᴀ
     SUBSCRIPTION_TXT = """
 <b><blockquote><b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
 
-ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=Mubi-{}
+ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=MUBIBOTz-{}
 
 ɪғ {} ᴜɴɪǫᴜᴇ ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴅᴅᴇᴅ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.
 
@@ -138,16 +138,16 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 🗃️Usᴇʀ Mᴇssᴀɢᴇ : {}
 📢Fʀᴏᴍ Bᴏᴛ Nᴀᴍᴇ Is Rᴇᴘᴏʀᴛᴇᴅ : <a href=https://t.me/{}>{}</a></b></blockquote>"""
     
-    LOG_TEXT_G = """<b><blockquote>#NewGroup
+    LOG_TEXT_G = """<b><blockquote> #NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
-Bᴏᴛ Nᴀᴍᴇ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
+Bᴏᴛ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
 
-    LOG_TEXT_P = """<b><blockquote>#NewUser
+    LOG_TEXT_P = """<b><blockquote> #NewUser
 ID - <code>{}</code>
 Nᴀᴍᴇ - {}
-Bᴏᴛ Nᴀᴍᴇ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
+Bᴏᴛ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
 
     ALRT_TXT = """<b><blockquote>ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -196,7 +196,7 @@ Bᴏᴛ Nᴀᴍᴇ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
 
     SINFO = """<b><blockquote>🫣 For Movie Join First Then Click On Try Again Button 😅</b></blockquote>"""
 
-    NORSLTS = """<b><blockquote>★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★ \n\n𝗜𝗗 <b>: {}</b>𝗡𝗮𝗺𝗲 <b>: {}</b> \n\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> </b></blockquote>"""
+    NORSLTS = """<b><blockquote>★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★ \n\n𝗜𝗗 <b>: {}𝗡𝗮𝗺𝗲 : {} \n\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲 : {} </b></blockquote>"""
 
     CAPTION = """<b>{file_name}</b>\n\n<b>» Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href="https://telegram.dog/+AVxJNDMxCjkyM2U1">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : <a href="https://telegram.dog/Tamil_chat_New_Tamil_HD_Movie">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n\n<b>» Lᴏᴠᴇ ᴇᴅɪᴛᴢ ➼ <a href="https://telegram.dog/Tamil_Love_Whatsapp_Video_Songs">Cʟɪᴄᴋ Hᴇʀᴇ</a></b>""" 
 
@@ -502,7 +502,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
 
  ಹೇಗೆ ಮತ್ತು ಏನು ಮಾಡಬೇಕು
 
- ಹಂತ 1: ಈ ಫಿಲ್ಟರ್-ಬಾಟ್ ಬೋಟ್ ಅನ್ನು ನಿಮ್ಮ ಗುಂಪಿಗೆ ನಿರ್ವಹಿಸಿ
+ ಹಂತ 1: ಈ FILTER-BOT ಬೋಟ್ ಅನ್ನು ನಿಮ್ಮ ಗುಂಪಿಗೆ ನಿರ್ವಹಿಸಿ
 
  ಹಂತ 2: ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಮತ್ತು API ಸೇರಿಸಿ
 
@@ -586,6 +586,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
  <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
  - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
 
