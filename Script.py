@@ -142,12 +142,12 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
-Bᴏᴛ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></b></blockquote>"""
+Bᴏᴛ Nᴀᴍᴇ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
 
     LOG_TEXT_P = """<b><blockquote>#NewUser
 ID - <code>{}</code>
 Nᴀᴍᴇ - {}
-Bᴏᴛ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></b></blockquote>"""
+Bᴏᴛ Nᴀᴍᴇ @New_Moviesi_HD_Hindi_bot </b></blockquote>"""
 
     ALRT_TXT = """<b><blockquote>ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -326,7 +326,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """
 
- A C T I V A T E D"""
+ BOT IS SUCCESSFULLY DEPLOYED AND WORKING"""
  
     TAMIL_INFO = """<b><blockquote>
 ஏய் <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a> 
@@ -586,6 +586,7 @@ Also your tutorial will be Added Your Group...</b></blockquote>"""
  <blockquote>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
   
  - ᴇx :- /share Hello Bro</b></blockquote>"""
+
 
 
 
